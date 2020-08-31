@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title" v-html="title"></title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon ICO -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+    <div class="wrapper row" id="app">
+        <!-- kolom kiri -->
+        <div class="left-col col-md-6">
+            <img src="images/FU.png" class="logo" alt="logo">
+            <div class="content" id="content">
+                <h1 id="brand" v-html="brand"></h1>
+                <h2 id="brand-title" v-html="brandTitle"></h2>
+                <p id="desk" v-html="desk"></p>
+                <button type="button" id="btn" v-html="btn"></button>
+            </div>
+        </div>
+        <!-- kolom kanan -->
+        <div class="right-col col-md-6">
+            <div class="slider">
+                <img src="images/kampus.jpg" alt="slider 1" id="slide">
+            </div>
+            <div class="slider-content">
+                <h2 id="title1"></h2>
+                <hr>
+                <p id="text1"></p>
+
+                <div class="control-slider">
+                    <img src="images/back1.png" alt="back" id="backBtn">
+                    <div class="vertical-line" id="vertical-line"></div>
+                    <img src="images/next1.png" alt="next" id="nextBtn">
+                </div>
+                <!-- Footer -->
+                <footer class="footer" id="footer">
+                    <!-- Default footer VueJS -->
+                    <p v-html="footer"></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script VueJS -->
+    <script src="js/vue.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
